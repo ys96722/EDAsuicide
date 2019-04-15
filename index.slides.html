@@ -18115,12 +18115,12 @@ require(
         function setScrollingSlide() {
             var scroll = true
             if (scroll === true) {
-              var h = $('.reveal').height() * 0.70;
+              var h = $('.reveal').height() * 0.95;
               $('section.present').find('section')
                 .filter(function() {
                   return $(this).height() > h;
                 })
-                .css('height', 'calc(70vh)')
+                .css('height', 'calc(95vh)')
                 .css('overflow-y', 'scroll')
                 .css('max-height', '-moz-available')
                 .css('max-height', '-webkit-fill-available')
