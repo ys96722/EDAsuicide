@@ -16820,9 +16820,14 @@ require(
                 })
                 .css('height', 'calc(95vh)')
                 .css('overflow-y', 'scroll')
+                .css('max-height', '-moz-available')
+                .css('max-height', '-webkit-fill-available')
+                .css('max-height', 'fill-available')
                 .css('margin-top', '20px');
             }
         }
+
+            // max-height: -webkit-fill-available;
 
         // check and set the scrolling slide every time the slide change
         Reveal.addEventListener('slidechanged', setScrollingSlide);
